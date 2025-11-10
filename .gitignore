@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+temp_auto_push.bat
+node_modules/
+.env
+.netlify/
+.gitignore
+temp_interactive_push.bat
