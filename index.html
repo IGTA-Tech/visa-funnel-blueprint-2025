@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGTA Visa Funnel Blueprint 2025 | Comprehensive Proposal</title>
+    <meta name="description" content="Complete end-to-end visa funnel automation system for O-1A, O-1B, EB-1A, and H-1B transfer services across our portfolio of immigration brands.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1e3a8a 50%, #0a0e27 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(-45deg, #1e3a8a, #7c3aed, #db2777, #1e3a8a);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #d1d5db;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 1rem;
+        }
+
+        section:nth-child(even) {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Brand Cards */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .brand-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .brand-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .brand-icon {
+            font-size: 2rem;
+        }
+
+        .brand-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+
+        .brand-card p {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .brand-links {
+            margin: 1rem 0;
+        }
+
+        .brand-link {
+            display: block;
+            font-size: 0.75rem;
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0.5rem 0;
+            transition: color 0.2s;
+        }
+
+        .brand-link:hover {
+            color: #93c5fd;
+        }
+
+        .brand-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+
+        .tag-blue { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+        .tag-purple { background: rgba(139, 92, 246, 0.2); color: #c4b5fd; }
+        .tag-pink { background: rgba(236, 72, 153, 0.2); color: #f9a8d4; }
+        .tag-green { background: rgba(34, 197, 94, 0.2); color: #86efac; }
+        .tag-yellow { background: rgba(234, 179, 8, 0.2); color: #fde047; }
+
+        /* Funnel Stages */
+        .funnel-stage {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(75, 85, 99, 0.5);
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .funnel-stage.active {
+            border-color: #3b82f6;
+        }
+
+        .stage-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .stage-header:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .stage-title-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .stage-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .stage-title {
+            text-align: left;
+        }
+
+        .stage-number {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            margin-bottom: 0.25rem;
+        }
+
+        .stage-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stage-subtitle {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        .stage-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .funnel-stage.active .stage-content {
+            max-height: 2000px;
+        }
+
+        .stage-details {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(75, 85, 99, 0.5);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-box h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+
+        .detail-box ul {
+            list-style: none;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        .detail-box li {
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .highlight-box {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-box h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #93c5fd;
+        }
+
+        /* Status Dashboard */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .status-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .status-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .status-icon {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+            border: 1px solid;
+        }
+
+        .status-live {
+            background: rgba(34, 197, 94, 0.2);
+            color: #86efac;
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+
+        .status-pending {
+            background: rgba(234, 179, 8, 0.2);
+            color: #fde047;
+            border-color: rgba(234, 179, 8, 0.3);
+        }
+
+        .status-not-started {
+            background: rgba(107, 114, 128, 0.2);
+            color: #d1d5db;
+            border-color: rgba(107, 114, 128, 0.3);
+        }
+
+        .status-card h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .status-platform {
+            font-size: 0.875rem;
+            color: #60a5fa;
+            margin: 0.5rem 0;
+        }
+
+        .status-notes {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            margin-top: 0.75rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .cta-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid rgba(75, 85, 99, 0.5);
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            .hero { padding: 3rem 1rem; }
+            .stats { flex-direction: column; }
+        }
+
+        /* Pricing table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.875rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(75, 85, 99, 0.5);
+        }
+
+        th {
+            color: #fde047;
+            font-weight: 600;
+        }
+
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .funnel-stage.active .arrow-icon {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="badge">Innovative Global Talent Agency</div>
+            <h1>Visa Funnel Blueprint 2025</h1>
+            <p>Complete End-to-End Automation System for O-1A, O-1B, EB-1A & H-1B Transfer Services</p>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number" style="color: #60a5fa;">7</div>
+                    <div class="stat-label">Funnel Stages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: #a78bfa;">5</div>
+                    <div class="stat-label">Brand Websites</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: #f9a8d4;">100%</div>
+                    <div class="stat-label">Automated</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Portfolio Section -->
+    <section id="brands">
+        <div class="container">
+            <h2>Our Immigration Brand Portfolio</h2>
+
+            <div class="brand-grid">
+                <!-- Sherrod Sports Visas -->
+                <div class="brand-card">
+                    <div class="brand-header">
+                        <div class="brand-icon">🏆</div>
+                        <div style="font-size: 1.25rem;">🔗</div>
+                    </div>
+                    <h3>Sherrod Sports Visas</h3>
+                    <p>Premium P-1 & O-1 visa services for athletes, coaches, and sports professionals across all major sports.</p>
+
+                    <div class="brand-links">
+                        <a href="https://www.sherrodsportsvisas.com/p1-athlete" class="brand-link" target="_blank">→ P-1 Athlete Visas</a>
+                        <a href="https://www.sherrodsportsvisas.com/services" class="brand-link" target="_blank">→ O-1 Visa Services</a>
+                        <a href="https://www.sherrodsportsvisas.com/o1b-visa-content-creators" class="brand-link" target="_blank">→ O-1B for Content Creators</a>
+                        <a href="https://sherrodsportsvisas.report" class="brand-link" target="_blank">→ Free Evaluation Tool</a>
+                    </div>
+
+                    <div class="brand-tags">
+                        <span class="tag tag-blue">P-1</span>
+                        <span class="tag tag-purple">O-1A/B</span>
+                        <span class="tag tag-pink">Athletes</span>
+                    </div>
+                </div>
+
+                <!-- Innovative Global Talent -->
+                <div class="brand-card">
+                    <div class="brand-header">
+                        <div class="brand-icon">⚡</div>
+                        <div style="font-size: 1.25rem;">🔗</div>
+                    </div>
+                    <h3>Innovative Global Talent</h3>
+                    <p>Agent-based visa services with proprietary Visa Accelerator program for rapid profile development.</p>
+
+                    <div class="brand-links">
+                        <a href="https://www.innovativeglobaltalent.com/visa-accelerator" class="brand-link" target="_blank">→ Visa Accelerator Program</a>
+                        <a href="https://www.innovativeglobaltalent.com/petitioner-services" class="brand-link" target="_blank">→ P-1 & O-1 Agent Services</a>
+                        <a href="https://www.innovativeglobaltalent.com/self-evaluation" class="brand-link" target="_blank">→ Self-Evaluation Tool</a>
+                    </div>
+
+                    <div class="highlight-box" style="margin: 1rem 0;">
+                        <h4 style="font-size: 0.75rem; margin-bottom: 0.5rem;">Visa Accelerator Tiers:</h4>
+                        <div style="font-size: 0.75rem; color: #9ca3af; line-height: 1.6;">
+                            <div>• Pro: $2k/mo (3-month min)</div>
+                            <div>• Elite: $2k/mo (6-8 months)</div>
+                            <div>• Immediate: $10-15k</div>
+                        </div>
+                    </div>
+
+                    <div class="brand-tags">
+                        <span class="tag tag-purple">O-1</span>
+                        <span class="tag tag-pink">Accelerator</span>
+                    </div>
+                </div>
+
+                <!-- Camino Immigration -->
+                <div class="brand-card">
+                    <div class="brand-header">
+                        <div class="brand-icon">🏢</div>
+                        <div style="font-size: 1.25rem;">🔗</div>
+                    </div>
+                    <h3>Camino Immigration</h3>
+                    <p>Full-service immigration firm handling employment-based, family-based, and humanitarian cases.</p>
+
+                    <div class="brand-links">
+                        <a href="https://www.caminoimmigration.com/immigration-risk-assessment" class="brand-link" target="_blank">→ Risk Assessment</a>
+                        <a href="https://intake.caminoimmigration.com/intake" class="brand-link" target="_blank">→ Consultation Booking</a>
+                    </div>
+
+                    <p style="margin-top: 1rem;">Services: H-1B, L-1, E-2, TN, O-1, P-1, EB-1A/B/C, NIW, Family Petitions, U/T Visas, VAWA, Asylum, Deportation Defense</p>
+
+                    <div class="brand-tags">
+                        <span class="tag tag-blue">EB-1</span>
+                        <span class="tag tag-purple">H-1B</span>
+                        <span class="tag tag-pink">Full Service</span>
+                    </div>
+                </div>
+
+                <!-- Aventus Visa Agents -->
+                <div class="brand-card">
+                    <div class="brand-header">
+                        <div class="brand-icon">👥</div>
+                        <div style="font-size: 1.25rem;">🔗</div>
+                    </div>
+                    <h3>Aventus Visa Agents</h3>
+                    <p>Multiple petitioner services with pay-on-approval model for freelancers, entrepreneurs, and international companies.</p>
+
+                    <div class="brand-links">
+                        <a href="https://www.aventusvisaagents.com/petitioner-services" class="brand-link" target="_blank">→ Petitioner Services</a>
+                        <a href="https://www.aventusvisaagents.com/check-your-petition-eligibility" class="brand-link" target="_blank">→ Eligibility Check</a>
+                        <a href="https://www.aventusvisaagents.com/for-attorneys-partner-with-us" class="brand-link" target="_blank">→ Attorney Partnerships</a>
+                    </div>
+
+                    <div class="brand-tags">
+                        <span class="tag tag-green">O-1</span>
+                        <span class="tag tag-blue">P-1</span>
+                        <span class="tag tag-purple">Agent Model</span>
+                    </div>
+                </div>
+
+                <!-- O&P Visas -->
+                <div class="brand-card">
+                    <div class="brand-header">
+                        <div class="brand-icon">🌍</div>
+                        <div style="font-size: 1.25rem;">🔗</div>
+                    </div>
+                    <h3>O&P Visas / Talent Migration</h3>
+                    <p>Comprehensive O-1 and P-1 visa resources with knowledge hub and community support.</p>
+
+                    <div class="brand-links">
+                        <a href="https://oandpvisas.community/" class="brand-link" target="_blank">→ Knowledge Hub</a>
+                    </div>
+
+                    <p style="margin-top: 1rem;">Note: Main site uses redirect - primary resource is community knowledge base</p>
+
+                    <div class="brand-tags">
+                        <span class="tag tag-yellow">O-1</span>
+                        <span class="tag tag-yellow">P-1</span>
+                        <span class="tag tag-pink">Resources</span>
+                    </div>
+                </div>
+
+                <!-- AI Evaluation Tool -->
+                <div class="brand-card">
+                    <div class="brand-header">
+                        <div class="brand-icon">🤖</div>
+                        <div style="font-size: 1.25rem;">🔗</div>
+                    </div>
+                    <h3>AI Visa Evaluations</h3>
+                    <p>Proprietary AI-powered evaluation tool scoring candidates 0-100% for O-1A, O-1B, and EB-1A eligibility.</p>
+
+                    <div class="brand-links">
+                        <div class="brand-link" style="cursor: default;">→ aivisaevaluations.online (Coming Soon)</div>
+                    </div>
+
+                    <div class="highlight-box" style="margin: 1rem 0; background: rgba(34, 197, 94, 0.1); border-color: rgba(34, 197, 94, 0.3);">
+                        <h4 style="font-size: 0.75rem; margin-bottom: 0.5rem; color: #86efac;">Scoring Criteria:</h4>
+                        <div style="font-size: 0.75rem; color: #9ca3af; line-height: 1.6;">
+                            <div>• Awards & Recognition</div>
+                            <div>• Press & Media Coverage</div>
+                            <div>• Critical Role Evidence</div>
+                            <div>• Portfolio Strength</div>
+                        </div>
+                    </div>
+
+                    <div class="brand-tags">
+                        <span class="tag tag-green">AI-Powered</span>
+                        <span class="tag tag-blue">Lead Gen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7-Stage Funnel -->
+    <section id="funnel">
+        <div class="container">
+            <h2>7-Stage Automated Visa Funnel</h2>
+            <p style="text-align: center; color: #9ca3af; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                From lead capture to visa filing - complete end-to-end automation system. Click each stage to expand details.
+            </p>
+
+            <!-- Stage 1 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(59, 130, 246, 0.2); color: #60a5fa;">🔍</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 1</div>
+                            <div class="stage-name">Evaluation Tool Flow</div>
+                            <div class="stage-subtitle">Lead Capture & AI Scoring</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #60a5fa; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <div class="details-grid">
+                            <div class="detail-box">
+                                <h4>Form Intake</h4>
+                                <ul>
+                                    <li>• Name, email, country, profession</li>
+                                    <li>• LinkedIn, portfolio URLs</li>
+                                    <li>• Optional document uploads</li>
+                                    <li>• Hosted on aivisaevaluations.online</li>
+                                </ul>
+                            </div>
+                            <div class="detail-box">
+                                <h4>AI Evaluation</h4>
+                                <ul>
+                                    <li>• OpenAI + custom scoring logic</li>
+                                    <li>• Visa Fit Score: 0-100%</li>
+                                    <li>• O-1A/B & EB-1A criteria modeling</li>
+                                    <li>• Instant eligibility summary</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="highlight-box" style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3);">
+                            <h4>Output Routing</h4>
+                            <div class="details-grid">
+                                <div>
+                                    <h4 style="color: #86efac; font-size: 0.875rem;">Score ≥ 50%:</h4>
+                                    <ul style="font-size: 0.875rem;">
+                                        <li>✓ Show results on-screen</li>
+                                        <li>✓ Display Cal.com booking link</li>
+                                        <li>✓ Send confirmation email</li>
+                                        <li>✓ Trigger outreach automation</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fde047; font-size: 0.875rem;">Score &lt; 50%:</h4>
+                                    <ul style="font-size: 0.875rem;">
+                                        <li>✓ Soft-decline message</li>
+                                        <li>✓ Improvement recommendations</li>
+                                        <li>✓ Add to nurture email list</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(139, 92, 246, 0.2); color: #a78bfa;">📧</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 2</div>
+                            <div class="stage-name">Lead Outreach & Nurturing</div>
+                            <div class="stage-subtitle">Automated Contact System</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #a78bfa; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <div class="details-grid">
+                            <div class="detail-box">
+                                <h4>Input Stream A: Manual Mining</h4>
+                                <ul>
+                                    <li>• MyVisaJobs H-1B database scraping</li>
+                                    <li>• High-skilled overseas professionals</li>
+                                    <li>• Data entry into Lead_Intelligence sheet</li>
+                                    <li>• Auto-triggers Dux Soup + Email</li>
+                                </ul>
+                            </div>
+                            <div class="detail-box">
+                                <h4>Input Stream B: Paid Ads</h4>
+                                <ul>
+                                    <li>• Meta/LinkedIn/Google campaigns</li>
+                                    <li>• Landing page conversions</li>
+                                    <li>• Evaluation completions</li>
+                                    <li>• Added to same automation sheet</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="highlight-box" style="background: rgba(139, 92, 246, 0.1); border-color: rgba(139, 92, 246, 0.3);">
+                            <h4>Target Markets</h4>
+                            <div class="details-grid">
+                                <div>
+                                    <h4 style="font-size: 0.875rem;">H-1B Holders (U.S.)</h4>
+                                    <p style="font-size: 0.875rem;">Silicon Valley, NYC, Dallas, Charlotte</p>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 0.875rem;">Overseas Tech</h4>
+                                    <p style="font-size: 0.875rem;">India, China, Taiwan, E. Europe</p>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 0.875rem;">High Net Worth</h4>
+                                    <p style="font-size: 0.875rem;">UAE, Qatar, Singapore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(236, 72, 153, 0.2); color: #f9a8d4;">💬</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 3</div>
+                            <div class="stage-name">Dux Soup + Email Automation</div>
+                            <div class="stage-subtitle">Multi-Channel Engagement</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #f9a8d4; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <div class="details-grid">
+                            <div class="detail-box">
+                                <h4>Dux Soup LinkedIn Sequence</h4>
+                                <ul>
+                                    <li>• Connection request with personalization</li>
+                                    <li>• Reference evaluation results</li>
+                                    <li>• Follow-up messages over 3-5 days</li>
+                                    <li>• Drive to consultation booking</li>
+                                </ul>
+                            </div>
+                            <div class="detail-box">
+                                <h4>Email Nurture Sequence</h4>
+                                <ul>
+                                    <li>• Day 1: Evaluation results delivery</li>
+                                    <li>• Day 3: Next step consultation CTA</li>
+                                    <li>• Day 7: Success case studies</li>
+                                    <li>• Day 10: Window of opportunity urgency</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="highlight-box" style="background: rgba(236, 72, 153, 0.1); border-color: rgba(236, 72, 153, 0.3);">
+                            <h4>CRM Integration</h4>
+                            <ul style="font-size: 0.875rem;">
+                                <li>✓ HubSpot / Google Sheets sync</li>
+                                <li>✓ Lead status: "Consult Scheduled" when booked</li>
+                                <li>✓ Lead status: "Client - Visa Package" when paid</li>
+                                <li>✓ Real-time pipeline tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(34, 197, 94, 0.2); color: #86efac;">📄</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 4</div>
+                            <div class="stage-name">Visa Writing Automation</div>
+                            <div class="stage-subtitle">Client Onboarding & Petition Creation</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #86efac; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <p style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 0.5rem; color: #86efac; font-weight: 600;">
+                            💳 Trigger: Payment Confirmed / Contract Signed
+                        </p>
+
+                        <div class="details-grid">
+                            <div class="detail-box">
+                                <h4>Automatic Setup</h4>
+                                <ul>
+                                    <li>• Create Client ID + Folder (Drive/Supabase)</li>
+                                    <li>• Generate I-129 draft template</li>
+                                    <li>• Pre-fill petitioner & beneficiary info</li>
+                                    <li>• Trigger document collection emails</li>
+                                </ul>
+                            </div>
+                            <div class="detail-box">
+                                <h4>AI-Powered Generation</h4>
+                                <ul>
+                                    <li>• Auto-build 3-year work itinerary</li>
+                                    <li>• Generate petition checklist table</li>
+                                    <li>• Draft support letters from templates</li>
+                                    <li>• Assign case manager (Slack/Email notify)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" style="background: rgba(34, 197, 94, 0.1); border-color: rgba(34, 197, 94, 0.3);">
+                            <h4>Package Pricing</h4>
+                            <div class="details-grid">
+                                <div style="text-align: center;">
+                                    <h4 style="color: #86efac;">O-1B Package</h4>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #ffffff; margin: 0.5rem 0;">$11,000</div>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">Arts, Entertainment, Content</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h4 style="color: #86efac;">O-1A Package</h4>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #ffffff; margin: 0.5rem 0;">$15,000</div>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">Business, Tech, Science</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h4 style="color: #86efac;">EB-1A Package</h4>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #ffffff; margin: 0.5rem 0;">$15,000</div>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">Permanent Residency</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(75, 85, 99, 0.5); border-radius: 0.5rem;">
+                            <h4 style="margin-bottom: 1rem;">Final Assembly (Attorney Review)</h4>
+                            <div class="details-grid">
+                                <ul style="font-size: 0.875rem; color: #9ca3af;">
+                                    <li>✓ I-129 Form</li>
+                                    <li>✓ Cover Letter</li>
+                                    <li>✓ Work Itinerary</li>
+                                </ul>
+                                <ul style="font-size: 0.875rem; color: #9ca3af;">
+                                    <li>✓ Support Letters</li>
+                                    <li>✓ Table of Exhibits</li>
+                                    <li>✓ Evidence Categorization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(234, 179, 8, 0.2); color: #fde047;">📈</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 5</div>
+                            <div class="stage-name">MEGA Campaign Integration</div>
+                            <div class="stage-subtitle">Continuous Lead Generation Engine</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #fde047; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <p style="margin-bottom: 1.5rem; color: #9ca3af; line-height: 1.6;">
+                            Partnership with MEGA to run targeted paid advertising campaigns across Meta, LinkedIn, and Google - feeding qualified leads into the evaluation funnel continuously.
+                        </p>
+
+                        <div style="overflow-x: auto;">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Target Group</th>
+                                        <th>Geography</th>
+                                        <th>Platform</th>
+                                        <th>Priority</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>H-1B holders in U.S.</td>
+                                        <td>Silicon Valley, NYC, Dallas, Charlotte</td>
+                                        <td>LinkedIn / Email</td>
+                                        <td><span style="color: #ef4444;">🔥 High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Overseas tech professionals</td>
+                                        <td>India, China, Taiwan, E. Europe</td>
+                                        <td>Paid Ads / MyVisaJobs</td>
+                                        <td><span style="color: #ef4444;">🔥 High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>High-net-worth professionals</td>
+                                        <td>UAE, Qatar, Singapore</td>
+                                        <td>LinkedIn Ads / Partnerships</td>
+                                        <td><span style="color: #fbbf24;">⚡ Medium</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="highlight-box" style="background: rgba(234, 179, 8, 0.1); border-color: rgba(234, 179, 8, 0.3);">
+                            <h4>MEGA Deliverables Package</h4>
+                            <div class="details-grid">
+                                <ul style="font-size: 0.875rem; color: #9ca3af;">
+                                    <li>✓ Target profiles CSV (50%+ score leads)</li>
+                                    <li>✓ Landing page links (all brands)</li>
+                                    <li>✓ Ad copy & visual creatives</li>
+                                </ul>
+                                <ul style="font-size: 0.875rem; color: #9ca3af;">
+                                    <li>✓ Cal.com booking integration</li>
+                                    <li>✓ CRM integration documentation</li>
+                                    <li>✓ Evaluation tool data sheet access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 6 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(6, 182, 212, 0.2); color: #67e8f9;">📅</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 6</div>
+                            <div class="stage-name">Consultation & Close</div>
+                            <div class="stage-subtitle">High-Touch Sales Process</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #67e8f9; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <div class="details-grid">
+                            <div class="detail-box">
+                                <h4>Consultation Flow</h4>
+                                <ul>
+                                    <li>• Cal.com automated scheduling</li>
+                                    <li>• Video call with immigration specialist</li>
+                                    <li>• Review evaluation + case strategy</li>
+                                    <li>• Present package options & pricing</li>
+                                </ul>
+                            </div>
+                            <div class="detail-box">
+                                <h4>Contract & Payment</h4>
+                                <ul>
+                                    <li>• Digital contract signing (DocuSign)</li>
+                                    <li>• Stripe/payment processor integration</li>
+                                    <li>• Payment plans available ($2k/mo min)</li>
+                                    <li>• Instant Stage 4 automation trigger</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 7 -->
+            <div class="funnel-stage" onclick="toggleStage(this)">
+                <div class="stage-header">
+                    <div class="stage-title-wrapper">
+                        <div class="stage-icon" style="background: rgba(239, 68, 68, 0.2); color: #fca5a5;">📤</div>
+                        <div class="stage-title">
+                            <div class="stage-number">Stage 7</div>
+                            <div class="stage-name">Filing & Case Management</div>
+                            <div class="stage-subtitle">USCIS Submission & Tracking</div>
+                        </div>
+                    </div>
+                    <div class="arrow-icon" style="color: #fca5a5; font-size: 1.5rem;">→</div>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-details">
+                        <div class="details-grid">
+                            <div class="detail-box">
+                                <h4>Filing Process</h4>
+                                <ul>
+                                    <li>• Attorney final review & signature</li>
+                                    <li>• USCIS electronic or mail filing</li>
+                                    <li>• Premium processing (15 days) or regular (4-6 months)</li>
+                                    <li>• Receipt confirmation & case tracking</li>
+                                </ul>
+                            </div>
+                            <div class="detail-box">
+                                <h4>Post-Filing Management</h4>
+                                <ul>
+                                    <li>• Automated status check emails</li>
+                                    <li>• RFE (Request for Evidence) response system</li>
+                                    <li>• Client portal with case updates</li>
+                                    <li>• Approval notification & next steps</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
+                            <h4>Timeline Options</h4>
+                            <div class="details-grid">
+                                <div style="text-align: center;">
+                                    <h4 style="color: #fca5a5;">Premium Processing</h4>
+                                    <div style="font-size: 1.75rem; font-weight: 700; color: #ffffff; margin: 0.5rem 0;">15 Days</div>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">+$2,805 USCIS fee</p>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">Recommended for urgent cases</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h4 style="color: #fb923c;">Regular Processing</h4>
+                                    <div style="font-size: 1.75rem; font-weight: 700; color: #ffffff; margin: 0.5rem 0;">4-6 Months</div>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">Standard USCIS fee only</p>
+                                    <p style="font-size: 0.875rem; color: #9ca3af;">Most cost-effective option</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Status Dashboard -->
+    <section id="status">
+        <div class="container">
+            <h2>Current System Status</h2>
+
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-icon" style="color: #86efac;">✅</div>
+                    <h3>AI Evaluation Tool</h3>
+                    <div class="status-badge status-live">✅ Live</div>
+                    <div class="status-platform">aivisaevaluations.online</div>
+                    <div class="status-notes">Working and scoring properly</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #86efac;">✅</div>
+                    <h3>Cal.com Calendars</h3>
+                    <div class="status-badge status-live">✅ Live</div>
+                    <div class="status-platform">Cal.com</div>
+                    <div class="status-notes">Integrated with email</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #86efac;">✅</div>
+                    <h3>MyVisaJobs Scraping</h3>
+                    <div class="status-badge status-live">✅ Live</div>
+                    <div class="status-platform">Manual + Sheet</div>
+                    <div class="status-notes">Producing steady leads</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #fde047;">⚙️</div>
+                    <h3>Dux Soup Sequences</h3>
+                    <div class="status-badge status-pending">⚙️ In Progress</div>
+                    <div class="status-platform">LinkedIn</div>
+                    <div class="status-notes">Need templates & triggers</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #fde047;">⚙️</div>
+                    <h3>Email Sequences</h3>
+                    <div class="status-badge status-pending">⚙️ In Progress</div>
+                    <div class="status-platform">Gmail API / SendGrid</div>
+                    <div class="status-notes">Needs copywriting & setup</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #fde047;">⚙️</div>
+                    <h3>Visa Writing Automation</h3>
+                    <div class="status-badge status-pending">⚙️ In Progress</div>
+                    <div class="status-platform">Make.com / n8n</div>
+                    <div class="status-notes">High priority</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #d1d5db;">🚧</div>
+                    <h3>MEGA Campaigns</h3>
+                    <div class="status-badge status-not-started">🚧 Not Started</div>
+                    <div class="status-platform">Meta / LinkedIn Ads</div>
+                    <div class="status-notes">Will integrate with funnel</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon" style="color: #fde047;">📊</div>
+                    <h3>CRM Integration</h3>
+                    <div class="status-badge status-pending">⚙️ In Progress</div>
+                    <div class="status-platform">HubSpot / Sheets</div>
+                    <div class="status-notes">Sheet-based, needs sync</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 style="margin-bottom: 1.5rem;">Ready to Scale Our Visa Funnel?</h2>
+                <p style="font-size: 1.125rem; color: #d1d5db; margin-bottom: 2rem;">
+                    This comprehensive blueprint represents our complete end-to-end automation system for talent migration services across our 5+ immigration brands.
+                </p>
+                <div class="cta-buttons">
+                    <a href="mailto:team@innovativeglobaltalent.com" class="btn btn-primary">
+                        📧 Contact Internal Team
+                    </a>
+                    <a href="#brands" class="btn btn-secondary">
+                        🏢 Review Brand Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Innovative Global Talent Agency - Visa Funnel Blueprint</p>
+            <p style="margin-top: 0.5rem;">Confidential Internal Proposal</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleStage(element) {
+            // Close all other stages
+            document.querySelectorAll('.funnel-stage').forEach(stage => {
+                if (stage !== element) {
+                    stage.classList.remove('active');
+                }
+            });
+
+            // Toggle clicked stage
+            element.classList.toggle('active');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
